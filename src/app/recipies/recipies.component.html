@@ -3,6 +3,6 @@
     <app-recipie-list (recipeWasSelected)="onRecipeWasSelected($event)"></app-recipie-list>
   </div>
   <div class="col-md-7">
-    <app-recipie-detail [recipe]="selectedRecipe"></app-recipie-detail>
+    <app-recipie-detail *ngIf="selectedRecipe" [recipe]="selectedRecipe"></app-recipie-detail>
   </div>
 </div>

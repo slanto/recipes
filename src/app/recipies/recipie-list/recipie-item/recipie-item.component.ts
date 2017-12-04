@@ -16,7 +16,7 @@ export class RecipieItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelected() {
+  onSelected() {  
     this.recipieSelected.emit();
   }
 }
